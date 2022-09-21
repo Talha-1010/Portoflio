@@ -1,0 +1,187 @@
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+.text{
+    color: azure;
+}
+
+.header{
+    background-image: url("https://media.istockphoto.com/vectors/dark-prism-textured-abstract-background-vector-id1286354786?k=20&m=1286354786&s=612x612&w=0&h=_GDyhERwWkugkVLBHjiy1fRhVa-VZeNbOut6H-tpUeM=");
+    /* background-color: black; */
+    border-radius: 10px;
+}
+.header-title-section{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.header-content-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+ }
+
+.title-section{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.content-section{
+    
+    padding: 3.75%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 0;
+    grid-row-gap: 20px;
+
+}
+
+.item{
+    padding: 10px;
+    border: 2px solid  gray;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+
+
+
+
+
+
+
+.profile-title{
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    font-weight: normal;
+    color: white;
+
+}
+
+.title{
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.25);
+
+}
+
+.heading{
+    font-family: 'Roboto Slab' ,serif;
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+}
+
+.heading-number{
+    color: rgba(0, 0, 0, 0.25);
+    padding-left: 4px;
+}
+
+.heading-title{
+    color: rgb(51, 51, 51);
+}
+
+.profile-image{
+
+    width: 100px;
+    border-radius: 100%;
+    border:  1px white; 
+}
+
+
+.paragraphs{
+
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    color: rgb(51, 51, 51);
+
+}
+
+.links{
+
+     /* Each address of the page is a link. The URL for each link is listed in listicle-content.txt. */
+
+    color: #42b4d6;
+    font-weight: normal;
+    text-decoration: none;
+    padding-left: 2px;
+    padding-right: 2px;
+
+}
+
+.links:hover{
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 3.75%;
+}
+
+
+.time-table-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+/* On screens that are 767px or greater, set the background color to blue */
+@media screen and (min-width: 767px) {
+    .content-section{
+    
+        grid-template-columns: 47.5% 47.5%;
+        grid-column-gap: 5%;
+        grid-row-gap: 40px;
+    
+    }
+    
+    .item{
+        padding: 20px;
+        border: 2px solid  gray;
+        border-radius: 8px;
+    }
+  }
+  
+  /* On screens that are 992px or greater, set the background color to olive */
+  @media screen and (min-width: 992px) {
+    .content-section{
+        grid-template-columns: 20% 20% 20% 20% ;
+        grid-row-gap: 50px;
+    }
+    .item{
+        padding: 30px;
+        border: 2px solid  gray;
+        border-radius: 8px;
+    }
+
+    
+  }
+
+
+
+  .footer{
+
+    background-color: black;
+    padding: 40px;
+    border-top: 3px gray;
+
+  }
